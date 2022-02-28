@@ -19,7 +19,6 @@ describe('Create User', () => {
     }
 
     const response = await createUserUseCase.execute(newUser)
-    console.log("🚀 ~ file: CreateUserUseCase.spec.ts ~ line 21 ~ it ~ response", response)
 
     expect(response).toHaveProperty('id')
   })
